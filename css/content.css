@@ -1,0 +1,103 @@
+main {
+  width: 66.6667%;
+  background: #393e46;
+}
+
+/* main p::first-letter {
+  font-weight: bold;
+  color: #eeeeee;
+  font-size: 120%;
+} */
+
+.add-new {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.25rem;
+}
+
+.add-new button {
+  font-size: 1.5rem;
+  color: white;
+  background: rgb(31, 41, 55);
+
+  border: none;
+  padding-top: 0.215rem 0.575rem 0.425rem 0.575rem;
+
+  position: relative;
+  top: 0.275rem;
+  right: -0.275rem;
+  border-radius: 0.375rem;
+}
+
+.add-new button:hover,
+.add-new button:active {
+  background: #35858b;
+  color: #aefeff;
+}
+
+/* Titles */
+.title {
+  margin-top: -0.5rem;
+}
+h1 {
+  font-size: 2rem;
+  /* margin-bottom: rem; */
+  font-family: "Arial Rounded MT Bold", "Nunito", "Varela Round",
+    "Helvetica Rounded", Arial, sans-serif;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+h1.today {
+  color: rgb(var(--color-today));
+}
+
+h1.scheduled {
+  display: none;
+  color: rgb(var(--color-scheduled));
+}
+
+h1.all {
+  display: none;
+  color: rgb(var(--color-all));
+}
+
+h1.flagged {
+  display: none;
+  color: rgb(var(--color-flagged-light));
+}
+
+/* todos */
+
+.todos li {
+  list-style: none;
+  line-height: 1.4rem;
+  display: flex;
+}
+.todos p {
+  margin-bottom: 1.4rem;
+  padding: 0.625rem 0;
+  border-bottom: 1px solid rgb(67, 75, 88);
+  flex-grow: 1;
+}
+
+.todos {
+  padding: 10px 0;
+  margin: .4rem;
+}
+.todos svg {
+  width: 2rem;
+  height: 2rem;
+  stroke: rgb(28, 34, 44);
+  stroke-width: 1;
+  fill: #727a8a;
+  cursor: pointer;
+  flex: none;
+  margin: 0.425rem 0.425rem;
+}
+
+.todos svg:hover,
+.todos svg:active {
+  fill: rgb(235, 219, 81);
+}
+
